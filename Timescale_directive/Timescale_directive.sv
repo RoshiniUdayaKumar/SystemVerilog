@@ -9,7 +9,8 @@ module tb();
     //16MHz clk 
   
   always #62.5 clk8=~clk8;
-    
+
+  //to display waveforms (used only for EDA playground)
   initial begin 
     $dumpfile("dump.vcd");
     $dumpvars;
